@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salón - Catálogo</title>
+  <link rel="icon" href="../img/M.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="logo">
+      <img src="../img/M.png" alt="Logo Muebles" />
+    </div>
+    <button class="menu-button" id="menuToggle">Menú ▾</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../principal/index.html">Inicio</a>
+      <a href="../catalogo/index.html">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="catalogo">
+    <h2 class="catalogo-titulo">Salón</h2>
+
+    <div class="seccion">
+      <img src="../img/sofa3plazas.jpg" alt="Sofá moderno">
+      <h3>Sofá moderno 3 plazas</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/orejero.png" alt="Sillón">
+      <h3>Sillón orejero</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/chaise-long.png" alt="Sofá moderno">
+      <h3>Sofá chaise long</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/mesa-de-centro-olivia-i-envejecida.png" alt="Mesa de centro de madera">
+      <h3>Mesa de centro de madera</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/estanteria.jpg" alt="Estantería abierta">
+      <h3>Estantería abierta</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/aparador.png" alt="Aparador blanco">
+      <h3>Aparador blanco</h3>
+    </div>
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

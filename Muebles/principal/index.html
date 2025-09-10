@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muebles M&B</title>
+  <link rel="icon" href="../img/M.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR -->
+  <header class="navbar" id="navbar">
+    <div class="logo">
+      <img src="../img/M.png" alt="Logo Muebles" />
+    </div>
+    <button class="menu-button" id="menuToggle">Menú ▾</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../catalogo/index.html">Catálogo</a>
+      <a href="#sobre-nosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!--INICIO-->
+  <section class="inicio">
+    <h1>Bienvenido a Muebles M&B</h1>
+    <p>Descubre el estilo y la comodidad que tu hogar merece.
+En nuestra tienda de muebles, encontrarás piezas únicas y de alta calidad que transformarán tus espacios en
+ ambientes acogedores y llenos de personalidad. Desde diseños clásicos hasta las últimas tendencias modernas, 
+ tenemos todo para que tu casa refleje tu estilo. Explora nuestra colección y haz de cada rincón un lugar especial. 
+ ¡Renueva tu hogar hoy con muebles que inspiran!
+
+</p>
+
+  <!-- CATÁLOGO -->
+  <main id="catalogo" class="catalogo">
+    <div class="seccion">
+      <img src="../img/salon.jpg" alt="Salón" />
+      <h3>Salón</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/cocina.jpg" alt="Cocina" />
+      <h3>Cocina</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/baño.png" alt="Baño" />
+      <h3>Baño</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/estudio.jpg" alt="Estudio" />
+      <h3>Estudio</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/habitacción.jpg" alt="Dormitorios" />
+      <h3>Dormitorios</h3>
+    </div>
+     <div class="seccion">
+      <img src="../img/exterior.png" alt="Exterior" />
+      <h3>Exterior</h3>
+    </div>
+  </main>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre-nosotros" class="info">
+    <h2>Sobre Nosotros</h2>
+    <p>Somos especialistas en muebles y decoración desde 1975. Ofrecemos asesoramiento, transporte, montaje y financiación.</p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="info">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Nombre" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="mensaje" placeholder="¿En qué estás interesado?" rows="4"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script>
+    // JavaScript simple para el despliegue del menú
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navbar = document.getElementById('navbar');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navbar.classList.toggle('expanded');
+    });
+  </script>
+</body>
+</html>

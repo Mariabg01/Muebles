@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cocina - Catálogo</title>
+  <link rel="icon" href="../img/M.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="logo">
+      <img src="../img/M.png" alt="Logo Muebles" />
+    </div>
+    <button class="menu-button" id="menuToggle">Menú ▾</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../principal/index.html">Inicio</a>
+      <a href="../catalogo/index.html">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="catalogo">
+    <h2 class="catalogo-titulo">Cocina</h2>
+
+    <div class="seccion">
+      <img src="../img/cocinaBlanca.png" alt="Cocina moderna blanca">
+      <h3>Cocina moderna blanca</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/cocinaNegra.png" alt="Cocina moderna negra">
+      <h3>Cocina moderna negra</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/cocinaGranito.png" alt="Cocina moderna granito">
+      <h3>Cocina moderna granito</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/mesaCocina.png" alt="Mesa de cocina extensible">
+      <h3>Mesa de cocina extensible</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/sillaCocina.png" alt="Pack de 4 sillas de cocina">
+      <h3>Sillas de cocina</h3>
+    </div>
+    <div class="seccion">
+      <img src="../img/armarioCocina.png" alt="Armario auxiliar de cocina">
+      <h3>Armario auxiliar de cocina</h3>
+    </div>
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
